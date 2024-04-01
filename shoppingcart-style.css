@@ -1,0 +1,161 @@
+.main-contents{
+    display:flex;
+    justify-content: space-evenly;
+    padding:60px;
+}
+.recommended-items img{
+    width:200px;
+}
+#number-of-items{
+    color:grey;
+    size: small;
+}
+.left{
+    align-items: center;
+    justify-content: center;
+}
+ h3{
+    margin-top: 30px;
+    margin-bottom: 100px;
+  
+}
+.recommended-items{
+    display: flex;
+    justify-content: space-evenly;
+}
+.recommended-item button{
+    width:100%;
+    padding:5px;
+    background-color: transparent;
+    border-width: 1px;
+}
+.recommended-item button:hover{
+    background-color: black;
+    color:white;
+}
+.right{
+    background-color: whitesmoke;
+    text-align: center;
+    padding:15px;
+    border-radius: 3px;
+
+}
+.subtotal-price{
+    display: flex;
+    justify-content: space-between;
+}
+.right-sub{
+    background-color: black;
+    color:white;
+    padding:10px;
+   
+    margin-top: 10px;
+}
+.right-sub2{
+    background-color: white;
+    padding:10px;
+}
+.right-sub2 ul li{
+    list-style: none;
+}
+.right-sub2 ul a:hover{
+    text-decoration: underline;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top:10px;
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2){
+    .recommended-items{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-left:3em;
+    }
+    .left-footer,.right-footer{
+        display: flex;
+        flex-direction: column;
+}
+}
+@media (max-width: 767px){
+    .logos-set{
+        display: none;
+    }
+    nav.nav2{
+        display: none;
+    }
+    .recommended-items{
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+    form {
+        display: flex;
+        align-items: center;
+        padding:2em;
+      }
+    
+    
+      
+      input[type="email"] {
+        padding: 10px;
+        border: 1.5px solid black;
+    
+        font-size: 16px;
+    
+      }
+    
+      
+      .stay{
+        padding:1em;
+      }
+      .enter {
+        padding: 10px 20px;
+        background-color: white;
+        color: black;
+        border-color: black;
+        font-size: 16px;
+        cursor: pointer;
+        width:100px;
+      }
+  
+     
+    .privacy-policy{
+     
+        padding:1em;
+    }
+    .footer-logos{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:30px;
+    }
+
+ 
+    .left-footer,.right-footer{
+        display: flex;
+        flex-direction: column;
+    }
+    input.email,input.pass,input.name {
+        padding: 10px;
+        width: 20em!important;
+        border: 1.5px solid black;
+        font-size: 16px;
+    }
+    input#email-input{
+        width:15em!important;
+      }
+      button.enter{
+        width:6em;
+  
+  }
+  .main-contents{
+    flex-wrap: wrap ;
+  }
+}
+
+
+
